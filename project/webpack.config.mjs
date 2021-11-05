@@ -27,8 +27,8 @@ export default {
     path: path.resolve(__dirname, 'dist'),
   },
 
-  // cache: {
-  //   type: 'filesystem',
-  // },
+  cache: {
+    type: 'filesystem',
+  },
 
 };
