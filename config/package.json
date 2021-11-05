@@ -1,0 +1,14 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Configuration module for webpack",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "author": "Derek Young",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
