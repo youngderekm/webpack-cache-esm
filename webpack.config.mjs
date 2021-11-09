@@ -10,6 +10,8 @@ import {createRequire} from "module";
 const require = createRequire(import.meta.url);
 
 export default {
+  mode: "development",
+
   infrastructureLogging: {
     debug: /webpack\.cache/
   },
@@ -19,6 +21,7 @@ export default {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  // comment out this section and build should run with no errors or warnings.
   cache: {
     type: 'filesystem',
   },
