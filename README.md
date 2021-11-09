@@ -68,3 +68,20 @@ rm -rf node_modules/.cache
 
 If you comment out the cache configuration in webpack.config.mjs, then run "npm run build",
 you'll see that it runs cleanly with no warnings.
+
+## Running with Docker
+
+to run from docker, first start an image an mount the current directory to /src:
+
+```
+docker run -v ${PWD}:/src -it --rm node:16 /bin/bash
+```
+
+You'll now be in a shell.  In this shell, do the following:
+
+```
+cd /src
+rm -rf node_modules
+npm install
+npm run build
+```
